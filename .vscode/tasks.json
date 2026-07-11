@@ -40,6 +40,30 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "label": "build 547_number_of_providences",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build",
+                "--target",
+                "547_number_of_providences"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": [
+                "configure cmake debug"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }

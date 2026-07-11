@@ -11,6 +11,17 @@
             "preLaunchTask": "build 1971_find_if_path_exists_in_graph",
             "stopOnEntry": false,
             "terminal": "integrated"
+        },
+        {
+            "name": "LLDB: Launch 547 Number of Providences",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/547_number_of_providences",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build 547_number_of_providences",
+            "stopOnEntry": false,
+            "terminal": "integrated"
         }
     ]
 }
