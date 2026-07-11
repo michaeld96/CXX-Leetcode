@@ -22,6 +22,17 @@
             "preLaunchTask": "build 547_number_of_providences",
             "stopOnEntry": false,
             "terminal": "integrated"
+        },
+        {
+            "name": "LLDB: Launch 2685 Count the Number of Complete Compoenents",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/2685_count_the_number_of_complete_components",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build 2685_count_the_number_of_complete_components",
+            "stopOnEntry": false,
+            "terminal": "integrated"
         }
     ]
 }
