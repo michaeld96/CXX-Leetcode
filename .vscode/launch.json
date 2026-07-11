@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "LLDB: Launch 1971 Find if Path Exists in Graph",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/1971_find_if_path_exists_in_graph",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build 1971_find_if_path_exists_in_graph",
+            "stopOnEntry": false,
+            "terminal": "integrated"
+        }
+    ]
+}
