@@ -15,6 +15,7 @@ void dfs(vector<int>& visited, vector<vector<int>>& adj_matrix, int city)
     while (!s.empty()) {
         int current = s.top();
         s.pop();
+        // get the list for each city!
         const vector<int>& adj_list = adj_matrix[current];
         for (int neighbor = 0; neighbor < adj_list.size(); ++neighbor) {
             if (visited[neighbor]) {
