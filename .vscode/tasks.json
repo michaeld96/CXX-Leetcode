@@ -64,6 +64,30 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "label": "build 2685_count_the_number_of_complete_components",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build",
+                "--target",
+                "2685_count_the_number_of_complete_components"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": [
+                "configure cmake debug"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
