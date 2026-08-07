@@ -75,23 +75,14 @@ using std::vector;
 int main()
 {
     // test case 1:
-    // vector<vector<int>> edges = {
-    //     {0, 1},
-    //     {0, 2},
-    //     {1, 2},
-    //     {3, 4}
-    // };
-    // int n = 6;
-    // result == 3;
-
-    // test case 2:
     vector<vector<int>> edges = {
-        {1, 0},
-        {2, 0},
-        {3, 1},
-        {3, 2}
+        {0, 1},
+        {0, 2},
+        {1, 2},
+        {3, 4}
     };
-    int n = 4;
+    int n = 6;
+    // result == 3;
 
     int result = countCompleteComponents(n, edges);
     assert(result == 3);
