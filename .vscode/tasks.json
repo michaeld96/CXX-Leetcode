@@ -5,89 +5,19 @@
             "label": "configure cmake debug",
             "type": "shell",
             "command": "cmake",
-            "args": [
-                "-S",
-                ".",
-                "-B",
-                "build",
-                "-DCMAKE_BUILD_TYPE=Debug"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
+            "args": ["-S", ".", "-B", "build", "-DCMAKE_BUILD_TYPE=Debug"],
+            "options": { "cwd": "${workspaceFolder}" },
             "problemMatcher": []
         },
         {
-            "label": "build 1971_find_if_path_exists_in_graph",
+            "label": "build current problem",
             "type": "shell",
             "command": "cmake",
-            "args": [
-                "--build",
-                "build",
-                "--target",
-                "1971_find_if_path_exists_in_graph"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
-            "dependsOn": [
-                "configure cmake debug"
-            ],
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "label": "build 547_number_of_providences",
-            "type": "shell",
-            "command": "cmake",
-            "args": [
-                "--build",
-                "build",
-                "--target",
-                "547_number_of_providences"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
-            "dependsOn": [
-                "configure cmake debug"
-            ],
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
-            "label": "build 2685_count_the_number_of_complete_components",
-            "type": "shell",
-            "command": "cmake",
-            "args": [
-                "--build",
-                "build",
-                "--target",
-                "2685_count_the_number_of_complete_components"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
-            "dependsOn": [
-                "configure cmake debug"
-            ],
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "args": ["--build", "build", "--target", "${fileBasenameNoExtension}"],
+            "options": { "cwd": "${workspaceFolder}" },
+            "dependsOn": ["configure cmake debug"],
+            "problemMatcher": ["$gcc"],
+            "group": { "kind": "build", "isDefault": true }
         }
     ]
 }

@@ -1,38 +1,16 @@
-{
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "LLDB: Launch 1971 Find if Path Exists in Graph",
-            "type": "lldb",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/1971_find_if_path_exists_in_graph",
-            "args": [],
-            "cwd": "${workspaceFolder}",
-            "preLaunchTask": "build 1971_find_if_path_exists_in_graph",
-            "stopOnEntry": false,
-            "terminal": "integrated"
-        },
-        {
-            "name": "LLDB: Launch 547 Number of Providences",
-            "type": "lldb",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/547_number_of_providences",
-            "args": [],
-            "cwd": "${workspaceFolder}",
-            "preLaunchTask": "build 547_number_of_providences",
-            "stopOnEntry": false,
-            "terminal": "integrated"
-        },
-        {
-            "name": "LLDB: Launch 2685 Count the Number of Complete Compoenents",
-            "type": "lldb",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/2685_count_the_number_of_complete_components",
-            "args": [],
-            "cwd": "${workspaceFolder}",
-            "preLaunchTask": "build 2685_count_the_number_of_complete_components",
-            "stopOnEntry": false,
-            "terminal": "integrated"
-        }
-    ]
-}
+  {
+      "version": "0.2.0",
+      "configurations": [
+          {
+              "name": "LLDB: Launch current problem",
+              "type": "lldb",
+              "request": "launch",
+              "program": "${workspaceFolder}/build/${fileBasenameNoExtension}",
+              "args": [],
+              "cwd": "${workspaceFolder}",
+              "preLaunchTask": "build current problem",
+              "stopOnEntry": false,
+              "terminal": "integrated"
+          }
+      ]
+  }
